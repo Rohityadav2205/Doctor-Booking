@@ -1,0 +1,88 @@
+{% extends 'base/base.html' %}
+{% block title %}Doctor Booking App - OPD Form {% endblock %}
+
+{% block content %}
+
+<br>
+<div class="row">
+
+    <div class="col-md-12">
+
+        <!--        sign in code starts here -->
+
+        <form   method="get">
+
+        <section class="vh-100" style="background-color: #508bfc;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-8 col-xl-7">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <h3 class="mb-5">Patient Details</h3>
+
+
+
+            <div class="form-outline mb-4">
+                <table style = "padding-top: 10px; margin: 4px; background-color: powderblue;">
+
+                    <tr>
+                        <td>
+                            <label class="form-label" >Patient Name </label>
+                        </td>
+                        <td>
+                            <input type="text" name = "patientname" class="form-control form-control-lg"  placeholder="Enter Patient Name" required/>
+                        </td>
+<!--                        <td>-->
+<!--                            <label class="form-label" >Patient Age </label>-->
+<!--                        </td>-->
+                        <td>
+                            <input type="text" name = "patientage" class="form-control form-control-lg"  placeholder="Age" required/>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="form-label" >Mobile</label>
+                        </td>
+                        <td>
+                            <input type="text" name = "mobile" class="form-control form-control-lg" placeholder="Mobile" required/>
+                        </td>
+                        <td>
+                            <select class="custom-select" name="gender">
+                                  <option selected>Select Your Gender</option>
+                                  <option value="1">Female</option>
+                                  <option value="2">Male</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="form-label" >Address</label>
+                        </td>
+                        <td>
+                            <input type="text" name = "address" class="form-control form-control-lg" placeholder="Enter Your Address" required/>
+                        </td>
+                    </tr>
+                </table>
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+        <!--        sign in code ends here -->
+        </form>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
